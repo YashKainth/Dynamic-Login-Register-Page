@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register/Login Dynamic Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="login-form active form">
+        <h2>Login</h2>
+        <input type="text" placeholder="Username" />
+        <input type="password" placeholder="Password" />
+        <button>Login</button>
+        <button id="switch" onclick="toggleForm('register')">New User?</button>
+      </div>
+      <div class="register-form inactive form">
+        <h2>Register</h2>
+        <input type="text" placeholder="Username" />
+        <input type="password" placeholder="Password" />
+        <input type="password" placeholder="Re-Enter Password" />
+        <button>Register</button>
+        <button id="switch" onclick="toggleForm('login')">Already User?</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
